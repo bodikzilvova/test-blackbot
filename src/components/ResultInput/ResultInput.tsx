@@ -1,4 +1,5 @@
 import React from "react";
+import { Input } from "../EthInput/EthInput.styled";
 
 interface ResultInputProps {
   ethAmount: string;
@@ -17,13 +18,12 @@ const ResultInput: React.FC<ResultInputProps> = ({
     action === "buy"
       ? parseFloat(ethAmount) * buyPrice
       : parseFloat(ethAmount) * sellPrice;
-      const totalPriceString = totalPrice.toString();
+  const totalPriceString = totalPrice.toString();
   return (
-    <div>
-      ResultInput
-      <p> You will recieve</p>
-      <input type="number" readOnly value={totalPriceString} />
-    </div>
+    <>
+      <p>You will {action === "buy" ? "pay" : "receive"}</p>
+      <Input type="number" readOnly value={totalPriceString} />
+    </>
   );
 };
 

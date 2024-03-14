@@ -1,4 +1,5 @@
 import React from "react";
+import { Select } from "./ActionSelect.styled";
 
 interface ActionSelectProps {
   onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
@@ -6,14 +7,13 @@ interface ActionSelectProps {
 
 const ActionSelect: React.FC<ActionSelectProps> = ({ onChange }) => {
   return (
-    <div>
-      <p>ActionSelect</p>
-
-      <select onChange={onChange}>
+    <>
+      <p>Buy/Sell</p>
+      <Select onChange={onChange}>
         <option value="buy">Buy</option>
         <option value="sell">Sell</option>
-      </select>
-    </div>
+      </Select>
+    </>
   );
 };
 

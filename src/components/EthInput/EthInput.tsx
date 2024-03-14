@@ -1,4 +1,5 @@
 import React from "react";
+import { Input, Title } from "./EthInput.styled";
 
 interface EthInputProps {
   value: string;
@@ -7,10 +8,11 @@ interface EthInputProps {
 
 const EthInput: React.FC<EthInputProps> = ({ value, onChange }) => {
   return (
-    <div>
-      <p> Eth amount: </p>
-      <input type="number" min="0" value={value} onChange={onChange} />
-    </div>
+    <>
+      <Title>Check the current Ethereum price</Title>
+      <p>Enter positive numbers</p>
+      <Input type="number" min="0" value={value} onChange={onChange} />
+    </>
   );
 };
 

@@ -55,7 +55,6 @@ function App() {
 
   return (
     <div className="App">
-      Render something
       <EthInput value={ethAmount} onChange={handleEthChange} />
       <ActionSelect onChange={handleActionChange} />
       <ResultInput
