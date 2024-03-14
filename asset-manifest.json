@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/test-blackbot/static/css/main.f855e6bc.css",
-    "main.js": "/test-blackbot/static/js/main.778dec55.js",
+    "main.js": "/test-blackbot/static/js/main.1da9c35f.js",
     "index.html": "/test-blackbot/index.html",
     "main.f855e6bc.css.map": "/test-blackbot/static/css/main.f855e6bc.css.map",
-    "main.778dec55.js.map": "/test-blackbot/static/js/main.778dec55.js.map"
+    "main.1da9c35f.js.map": "/test-blackbot/static/js/main.1da9c35f.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.778dec55.js"
+    "static/js/main.1da9c35f.js"
   ]
 }
