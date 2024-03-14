@@ -28,7 +28,9 @@ function App() {
     console.error("WebSocket error:", error);
   };
 
-  return <></>;
+  return <>
+  Render something
+  </>;
 }
 
 export default App;
